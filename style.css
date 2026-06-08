@@ -1,1 +1,29 @@
+/* --------------------
+   Base
+-------------------- */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #102a43;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* --------------------
+   Navigation
+-------------------- */
+
+header {
+    border-bottom: 1
