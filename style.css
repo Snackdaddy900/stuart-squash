@@ -1,29 +1,188 @@
-/* --------------------
-   Base
--------------------- */
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    color: #102a43;
-    background: #ffffff;
-    line-height: 1.6;
+  font-family: "Inter", sans-serif;
+  background: #f7f8fa;
+  color: #1f2937;
+  line-height: 1.5;
 }
 
-main {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px 20px;
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
 }
 
-/* --------------------
-   Navigation
--------------------- */
+nav {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 18px 24px;
+  display: flex;
+  gap: 28px;
+}
 
-header {
-    border-bottom: 1
+nav a {
+  font-size: 13px;
+  color: #475467;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #101828;
+}
+
+.page-shell {
+  max-width: 1180px;
+  margin: 48px auto;
+  padding: 42px 56px;
+  background: #ffffff;
+  border: 1px solid #d8e0ea;
+  border-radius: 8px;
+}
+
+.intro-strip {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #d8e0ea;
+}
+
+.profile-pic {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.intro-text h1 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 3px;
+}
+
+.intro-text p {
+  font-size: 13px;
+  color: #667085;
+}
+
+.sessions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 42px;
+  padding: 34px 0;
+}
+
+.session-tile {
+  display: block;
+  padding: 22px 0;
+  border-top: 1px solid #e5e7eb;
+  text-decoration: none;
+  color: inherit;
+}
+
+.session-tile:nth-child(1),
+.session-tile:nth-child(2) {
+  border-top: none;
+}
+
+.tile-top {
+  display: grid;
+  grid-template-columns: 14px 1fr 18px;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #6554c0;
+}
+
+.session-tile h2 {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.arrow {
+  font-size: 22px;
+  line-height: 1;
+  color: #98a2b3;
+}
+
+.session-tile p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #667085;
+  padding-left: 24px;
+  max-width: 430px;
+}
+
+.session-tile:hover h2 {
+  text-decoration: underline;
+}
+
+.session-tile:hover .arrow {
+  color: #475467;
+}
+
+.testimonial {
+  border-top: 1px solid #d8e0ea;
+  padding-top: 26px;
+  text-align: center;
+}
+
+.testimonial p {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.testimonial span {
+  font-size: 13px;
+  color: #667085;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #98a2b3;
+  padding: 24px;
+}
+
+@media (max-width: 760px) {
+  nav {
+    padding: 16px 20px;
+  }
+
+  .page-shell {
+    margin: 22px;
+    padding: 28px 22px;
+  }
+
+  .intro-strip {
+    align-items: center;
+    padding-bottom: 26px;
+  }
+
+  .sessions-grid {
+    grid-template-columns: 1fr;
+    padding: 26px 0;
+  }
+
+  .session-tile:nth-child(2) {
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .session-tile p {
+    max-width: none;
+  }
+}
