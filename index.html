@@ -27,6 +27,79 @@
     .session-tile:hover .arrow {
       color: #0055cc;
     }
+
+    /* NEW: book section styles — matching your existing design */
+    .book-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem 3rem;
+      margin-top: 2.5rem;
+      padding-top: 2rem;
+      border-top: 2px dashed #d0dbe8;
+    }
+
+    .book-text {
+      flex: 2 1 300px;
+    }
+
+    .book-text p {
+      font-size: 1.1rem;
+      color: #1a1e2b;
+      line-height: 1.6;
+      margin-bottom: 0.3rem;
+    }
+
+    .book-text .book-link {
+      display: inline-block;
+      color: #016aff;
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 2px solid #016aff;
+      padding-bottom: 2px;
+      transition: 0.2s;
+      margin-top: 0.3rem;
+    }
+
+    .book-text .book-link:hover {
+      color: #0055cc;
+      border-bottom-color: #0055cc;
+    }
+
+    .book-text .small-note {
+      font-size: 0.95rem;
+      color: #4a5f78;
+      margin-top: 0.2rem;
+    }
+
+    .book-image {
+      flex: 0 0 auto;
+    }
+
+    .book-image img {
+      max-width: 220px;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 12px 24px -8px rgba(0, 20, 40, 0.2);
+      display: block;
+    }
+
+    @media (max-width: 700px) {
+      .book-section {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.5rem;
+      }
+      .book-image {
+        display: flex;
+        justify-content: center;
+      }
+      .book-image img {
+        max-width: 180px;
+      }
+    }
   </style>
 </head>
 
@@ -131,6 +204,28 @@
       </a>
 
     </section>
+
+    <!-- ====== NEW BOOK SECTION (inserted here) ====== -->
+    <section class="book-section">
+      <div class="book-text">
+        <p>
+          <strong>📖 Download my book of essays on sports psychology here</strong>
+        </p>
+        <p class="small-note">
+          ✓ 130+ pages · practical mental techniques · pro insights
+        </p>
+        <a href="#" class="book-link">⬇ Download now (free)</a>
+      </div>
+      <div class="book-image">
+        <img 
+          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%23f5f0eb'/%3E%3Crect x='40' y='40' width='320' height='320' rx='12' fill='%23ffffff' stroke='%23d4c9bc' stroke-width='2'/%3E%3Ctext x='200' y='120' font-family='Georgia,serif' font-size='32' fill='%232c3e50' text-anchor='middle' font-weight='bold'%3ESERIOUS%3C/text%3E%3Ctext x='200' y='165' font-family='Georgia,serif' font-size='32' fill='%232c3e50' text-anchor='middle' font-weight='bold'%3EPLAY%3C/text%3E%3Ctext x='200' y='220' font-family='Georgia,serif' font-size='16' fill='%235a6d7e' text-anchor='middle' font-style='italic'%3EESSAYS ON TEMPO,%3C/text%3E%3Ctext x='200' y='248' font-family='Georgia,serif' font-size='16' fill='%235a6d7e' text-anchor='middle' font-style='italic'%3EFRICTION %26 REAL TIME%3C/text%3E%3Ctext x='200' y='310' font-family='Georgia,serif' font-size='20' fill='%23d97747' text-anchor='middle' font-weight='bold'%3EWanna play?%3C/text%3E%3Ctext x='200' y='355' font-family='serif' font-size='40' fill='%23b8a99a' text-anchor='middle'%3E%E7%94%B0%3C/text%3E%3C/svg%3E"
+          alt="Serious Play - Essays on Tempo, Friction & Real Time"
+          width="220" 
+          height="220"
+        >
+      </div>
+    </section>
+    <!-- ====== END BOOK SECTION ====== -->
 
     <section class="testimonial">
       <p>"I can promise you this guy knows squash." — Paul Coll, World No. 2</p>
