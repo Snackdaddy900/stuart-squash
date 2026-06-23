@@ -70,8 +70,8 @@
     }
 
     .book-text .small-note {
-      font-size: 0.95rem;
-      color: #4a5f78;
+      font-size: 1rem;
+      color: #1a1e2b;
       margin-top: 0.2rem;
       font-weight: 400;
     }
@@ -81,12 +81,11 @@
     }
 
     .book-image img {
-      width: 120px;
-      height: 120px;
-      border-radius: 12px;
-      box-shadow: 0 12px 24px -8px rgba(0, 20, 40, 0.2);
+      max-width: 120px;
+      width: auto;
+      height: auto;
+      border-radius: 8px;
       display: block;
-      object-fit: cover;
     }
 
     @media (max-width: 700px) {
@@ -100,8 +99,7 @@
         justify-content: center;
       }
       .book-image img {
-        width: 120px;
-        height: 120px;
+        max-width: 120px;
       }
     }
   </style>
@@ -213,19 +211,17 @@
     <section class="book-section">
       <div class="book-text">
         <p>
-          📖 Download my book of essays on sports psychology here
+          Download my book of essays on sports psychology here
         </p>
         <p class="small-note">
           ✓ 130+ pages · practical mental techniques · pro insights
         </p>
-        <a href="#" class="book-link">⬇ Download now (free)</a>
+        <a href="#" class="book-link">Download now (free)</a>
       </div>
       <div class="book-image">
         <img 
           src="serious_white.jpg"
           alt="Serious Play - Essays on Tempo, Friction & Real Time"
-          width="120" 
-          height="120"
         >
       </div>
     </section>
