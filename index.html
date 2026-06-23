@@ -45,21 +45,23 @@
     }
 
     .book-text p {
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: #1a1e2b;
       line-height: 1.6;
       margin-bottom: 0.3rem;
+      font-weight: 400;
     }
 
     .book-text .book-link {
       display: inline-block;
       color: #016aff;
-      font-weight: 700;
+      font-weight: 400;
       text-decoration: none;
       border-bottom: 2px solid #016aff;
       padding-bottom: 2px;
       transition: 0.2s;
       margin-top: 0.3rem;
+      font-size: 1rem;
     }
 
     .book-text .book-link:hover {
@@ -71,6 +73,7 @@
       font-size: 0.95rem;
       color: #4a5f78;
       margin-top: 0.2rem;
+      font-weight: 400;
     }
 
     .book-image {
@@ -78,12 +81,12 @@
     }
 
     .book-image img {
-      max-width: 220px;
-      width: 100%;
-      height: auto;
+      width: 120px;
+      height: 120px;
       border-radius: 12px;
       box-shadow: 0 12px 24px -8px rgba(0, 20, 40, 0.2);
       display: block;
+      object-fit: cover;
     }
 
     @media (max-width: 700px) {
@@ -97,7 +100,8 @@
         justify-content: center;
       }
       .book-image img {
-        max-width: 180px;
+        width: 120px;
+        height: 120px;
       }
     }
   </style>
@@ -209,7 +213,7 @@
     <section class="book-section">
       <div class="book-text">
         <p>
-          <strong>📖 Download my book of essays on sports psychology here</strong>
+          📖 Download my book of essays on sports psychology here
         </p>
         <p class="small-note">
           ✓ 130+ pages · practical mental techniques · pro insights
